@@ -1,18 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/viewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingTop="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:baselineAligned="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:padding="@dimen/padding_15dp"
+            android:background="@drawable/bg_movie_card">
+            <ImageView
+                android:id="@+id/imgMovie1"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:src="@drawable/movie_fifth_element"
+                android:contentDescription="@string/txt_movie1_title" />
+            <TextView
+                android:id="@+id/textMovie1Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_title_18sp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:text="@string/txt_movie1_title"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/textMovie1Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_small_12sp"
+                android:maxLines="2"
+                android:textColor="@color/gray_70"
+                android:text="@string/txt_movie1_desc"
+                android:gravity="left" />
+            <Button
+                android:id="@+id/btnMovie1Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/txt_details"
+                android:textSize="@dimen/text_small_12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_selector"
+                android:minHeight="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:padding="@dimen/padding_15dp"
+            android:background="@drawable/bg_movie_card">
+            <ImageView
+                android:id="@+id/imgMovie2"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:src="@drawable/movie_skyfall"
+                android:contentDescription="@string/txt_movie2_title"/>
+            <TextView
+                android:id="@+id/textMovie2Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_title_18sp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:text="@string/txt_movie2_title"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/textMovie2Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_small_12sp"
+                android:maxLines="2"
+                android:textColor="@color/gray_70"
+                android:text="@string/txt_movie2_desc"
+                android:gravity="left" />
+            <Button
+                android:id="@+id/btnMovie2Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/txt_details"
+                android:textSize="@dimen/text_small_12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_selector"
+                android:minHeight="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingTop="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:padding="@dimen/padding_15dp"
+            android:background="@drawable/bg_movie_card">
+            <ImageView
+                android:id="@+id/imgMovie3"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:src="@drawable/movie_forrest_gump"
+                android:contentDescription="@string/txt_movie3_title"/>
+            <TextView
+                android:id="@+id/textMovie3Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_title_18sp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:text="@string/txt_movie3_title"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/textMovie3Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_small_12sp"
+                android:maxLines="2"
+                android:textColor="@color/gray_70"
+                android:text="@string/txt_movie3_desc"
+                android:gravity="left" />
+            <Button
+                android:id="@+id/btnMovie3Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/txt_details"
+                android:textSize="@dimen/text_small_12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_selector"
+                android:minHeight="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:padding="@dimen/padding_15dp"
+            android:background="@drawable/bg_movie_card"
+            android:visibility="invisible"
+            tools:visibility="visible">
+            <ImageView
+                android:id="@+id/imgMovie4"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                tools:src="@tools:sample/avatars"
+                android:contentDescription="@string/txt_movie1_title" />
+            <TextView
+                android:id="@+id/textMovie4Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_title_18sp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:gravity="center"
+                tools:text="@tools:sample/first_names"/>
+            <TextView
+                android:id="@+id/textMovie4Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:textSize="@dimen/text_small_12sp"
+                android:maxLines="2"
+                android:textColor="@color/gray_70"
+                android:gravity="left"
+                tools:text="@tools:sample/lorem/random"/>
+            <Button
+                android:id="@+id/btnMovie4Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:text="@string/txt_details"
+                android:textSize="@dimen/text_small_12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_selector"
+                android:minHeight="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_15dp"
+            android:text="@string/txt_share"
+            android:textSize="@dimen/text_small_12sp"
+            android:minHeight="0dp"
+            android:background="@drawable/bg_button_selector" />
+    </LinearLayout>
+</ScrollView>
