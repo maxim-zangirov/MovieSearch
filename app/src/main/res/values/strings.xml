@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MovieSearch</string>
+    <string name="txt_movie1_title">Пятый элемент</string>
+    <string name="txt_movie1_desc">Каждые пять тысяч лет открываются двери между измерениями и темные силы стремятся нарушить существующую гармонию.
+        Каждые пять тысяч лет Вселенной нужен герой, способный противостоять этому злу. XXIII век.
+        Нью-йоркский таксист Корбен Даллас должен решить глобальную задачу - спасение всего рода человеческого.
+    </string>
+    <string name="txt_movie2_title">007: Координаты \"Скайфолл\"</string>
+    <string name="txt_movie2_desc">Лояльность Бонда своей начальнице М под угрозой со стороны ее прошлого, которое внезапно даст о себе знать.
+        MI6 подвергается нападению, и агент 007 должен ликвидировать угрозу, несмотря на цену, которую придется заплатить.
+    </string>
+    <string name="txt_movie3_title">Форрест Гамп</string>
+    <string name="txt_movie3_desc">От лица главного героя Форреста Гампа, слабоумного безобидного человека
+        с благородным и открытым сердцем, рассказывается история его необыкновенной жизни.
+    </string>
+    <string name="txt_details">Подробнее</string>
+    <string name="txt_share">Поделиться</string>
+    <string name="txt_share_message">Зацени приложение: https://play.google.com/store/apps/details?id=com.imdb.mobile</string>
+    <string name="txt_like">Нравится</string>
+    <string name="txt_back">Назад</string>
+
 </resources>

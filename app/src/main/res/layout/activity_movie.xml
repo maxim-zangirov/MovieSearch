@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_15dp"
+    android:padding="@dimen/padding_15dp"
+    android:background="@drawable/bg_movie_card">
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_title_18sp"
+        tools:text="@tools:sample/first_names"/>
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin_15dp"
+        tools:text="@tools:sample/full_names"/>
+
+    <CheckBox
+        android:id="@+id/cbLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:textColor="@color/black"
+        android:text="@string/txt_like"
+        android:checked="false"
+        android:textSize="@dimen/text_normal_16sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:textSize="@dimen/text_normal_16sp"
+        android:textColor="@color/black"
+        android:focusedByDefault="false"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txt_back" />
+
+</LinearLayout>
